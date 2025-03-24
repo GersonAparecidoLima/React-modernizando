@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './pages/App';  // Caminho correto para App.tsx
+
 
 
 const root = ReactDOM.createRoot(
