@@ -32,9 +32,11 @@ class Formulario extends React.Component {
             required
           />
         </div>
-        <Botao
-        texto="Adicionar Tempo"
-        />
+        // Aqui você precisa passar a prop `texto`
+        <Botao texto="Adicionar">
+          Adicionar aqui
+        </Botao>
+
       </form>
     )
   }
