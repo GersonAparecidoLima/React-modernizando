@@ -9,7 +9,6 @@ export default function Cronometro() {
       <div className={style.relogioWrapper}>
         <Relogio />
       </div>
-      // Usando o componente Botao corretamente
     <Botao texto="Começar!">
       Começar
     </Botao>
