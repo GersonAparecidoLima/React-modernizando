@@ -2,10 +2,9 @@
   display: grid;
   grid-template-rows: min-content min-content auto;
   grid-template-areas: 
-  "nova-tarefa"
-  "cronometro"
-  "tarefas"
-  ;
+    "nova-tarefa"
+    "cronometro"
+    "tarefas";
   row-gap: 24px;
   min-width: 320px;
   min-height: calc(100vh - 32px);
@@ -15,16 +14,43 @@
   border-radius: 10px;
   background-color: #171717;
 
-  @media screen and (min-width:1280px)  {
+  @media screen and (min-width: 1280px) {
     grid-template-areas: 
-    "nova-tarefa tarefas"
-    "cronometro tarefas"
-    ;
+      "nova-tarefa tarefas"
+      "cronometro tarefas";
     column-gap: 64px;
     grid-template-rows: min-content min-content;
     grid-template-columns: 750px 300px;
     justify-content: center;
     align-content: center;
     padding: 64px;
+  }
+}
+
+nav {
+  background-color: #d8d9da;
+  padding: 10px;
+  border-radius: 5px;
+
+  ul {
+    list-style: none;
+    display: flex;  /* Usando flex para exibir os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+    margin: 0;
+    padding: 0;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+  }
+
+  li {
+    a {
+      color: rgb(12, 12, 12);
+      text-decoration: none;
+      padding: 5px 10px;
+      border-radius: 3px;
+
+      &:hover {
+        background-color: #647063;
+      }
+    }
   }
 }
