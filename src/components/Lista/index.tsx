@@ -1,13 +1,13 @@
-import React from 'react';
 import { ITarefa } from '../../types/tarefa';
 import Item from './Item';
-import style from './Lista.module.scss';
+import style from './Item/Item.module.scss';
+
+
 
 
 interface Props {
   tarefas: ITarefa[],
   selecionaTarefa: (tarefaSelecionada: ITarefa) => void
-
 }
 
 function Lista({ tarefas, selecionaTarefa }: Props) {
